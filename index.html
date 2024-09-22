@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123</title> <!-- Set your roll number as the title -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Processor</h1>
+        <textarea id="jsonInput" placeholder='Enter JSON here (e.g., {"data": ["A", "1", "z"]})'></textarea>
+        <button id="submitBtn">Submit</button>
+        <div id="response"></div>
+        <div id="dropdownContainer" class="hidden">
+            <label for="dataSelect">Choose Data to Display:</label>
+            <select id="dataSelect" multiple>
+                <option value="numbers">Numbers</option>
+                <option value="alphabets">Alphabets</option>
+                <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
